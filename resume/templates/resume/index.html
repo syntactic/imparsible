@@ -1,6 +1,14 @@
 {% extends "imparsible/main.html" %}
 Sup
 {% block content %}
-<p>{{ content }}</p>
+<p>{{ resume.name }}</p>
+
+<h3>Education</h3>
+<ul>
+{% for school in resume.education_set.all %}
+<li>{{ school }}</li>
+{% endfor %}
+</ul>
+
 {% endblock %}
 Sup

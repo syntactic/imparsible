@@ -19,5 +19,5 @@ import resume.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^resume/', resume.views.index, name="resume"),
+    url(r'^resume/', resume.views.ResumeView.as_view(), name="resume"),
 ]
